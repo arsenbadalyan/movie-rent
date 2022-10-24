@@ -1,0 +1,222 @@
+.Content {
+  width: 100%;
+  height: 80vh;
+}
+.question_list {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.question {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.question_container {
+  width: 80%;
+}
+.question_container input[type='text'],
+.question_container input[type='number'] {
+  width: 100%;
+  height: 50px;
+  border: 2px solid black;
+  background: white;
+  padding: 0 20px;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px 0 gray;
+}
+
+/* Custom Radio and Checkbox Btns */
+.r_c_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.label_body {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 30px;
+  font-size: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  margin: 5px 0;
+}
+.label_body input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.label_body span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.label_body:hover input ~ .cus_radio {
+  background: lightblue;
+}
+.label_body input:checked ~ .cus_radio {
+  background: black;
+}
+.label_body .cus_radio::after {
+  content: '';
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white;
+}
+.label_body input:checked ~ .cus_radio::after {
+  display: block;
+}
+
+/* Select Option */
+.select_option select {
+  height: 50px;
+  width: 80%;
+  border-radius: 20px;
+  padding: 15px;
+  border: 1px solid black;
+  background: black;
+  box-shadow: 0 0 10px 0 black;
+  color: white;
+  font-weight: bold;
+}
+
+/* Input List */
+.inputList input {
+  margin-bottom: 15px;
+}
+
+/* Date Style */
+.date_s {
+  text-align: center;
+  width: 50%;
+  height: 50px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 black;
+  cursor: pointer;
+}
+
+/* Submit Btn */
+.submit_btn {
+  display: none;
+  margin-top: 3vh;
+  font-size: 1.2rem;
+  background: #4bb543;
+  color: white;
+  padding: 10px;
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  animation: sub-anim 1s infinite;
+  transition: all 500ms;
+}
+.submit_btn:hover {
+  background: green;
+}
+@keyframes sub-anim {
+  0% {
+    box-shadow: 0 0 10px 0 #4bb543;
+  }
+  50% {
+    box-shadow: 0 0 20px 0 #4bb543;
+    transform: scale(1.1);
+  }
+  100% {
+    box-shadow: 0 0 10px 0 #4bb543;
+  }
+}
+
+/* Submit Modal */
+.submit_modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: default;
+}
+.submit_modal__content {
+  width: 80%;
+  height: 90vh;
+  background: white;
+  box-shadow: 0 0 10px 0 black;
+  overflow: scroll;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Submit Modal Content */
+.answers_list {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.question__item {
+  margin-bottom: 20px;
+}
+/* Footer */
+.submit_modal__footer {
+  text-align: center;
+}
+.submit_modal__footer_btns {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+.submit_modal__footer_btns button {
+  padding: 10px;
+  border: 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+.submit_modal__footer_btns button:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 0 20px 0 gray;
+  transform: translateY(-5px);
+}
+.submit_modal__footer_btns .cancel_btn {
+  background: #a82e2e;
+}
+.submit_modal__footer_btns .success_btn {
+  background: #4bb543;
+}
+
+/* Succes Modal Hide */
+.successModal {
+  display: none;
+}
