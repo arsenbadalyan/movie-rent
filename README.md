@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+## Movie Rent Survey: React Edition
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Uncover user preferences and opinions on movie rentals with this interactive survey built with React!**
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [What it is](#what-it-is)
+- [What you can expect](#what-you-can-expect)
+- [Who is it for?](#who-is-it-for)
+- [Getting started](#getting-started)
+- [Screenshots](#screenshots)
+- [Additional features](#additional-features)
+- [Contributing](#contributing)
+- [Contact](#contact)
+- [License](#license)
 
-### `npm start`
+## What it is
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project is a simple yet engaging survey application built with React, allowing you to gather valuable insights on movie rental habits and user preferences. Imagine understanding user preferences for different rental platforms, pricing models, and movie genres. Gain insights into user behavior and decision-making processes when choosing movies to rent. Collect valuable feedback to improve your own movie rental business or inform future product development.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### What you can expect
 
-### `npm test`
+* **User-friendly interface:** Navigate the survey smoothly with a clean and intuitive design, featuring images and clear instructions.
+* **Interesting questions:** Dive into user preferences on rental platforms, pricing, preferred movie genres, and more.
+* **Dynamic experience:** Enjoy a seamless and interactive survey experience thanks to the power of React.
+* **Optional analytics:** The project can be configured to store and analyze survey data, offering deeper insights into user preferences.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
 
-### `npm run build`
+![Question](/screenshots/question.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Answers](/screenshots/answers-list.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Who is it for?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Anyone curious about movie rental trends and user behavior.
+* Developers looking to explore React in a practical and straightforward project.
+* Movie rental businesses seeking valuable user feedback.
 
-### `npm run eject`
+## Getting started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository: `git clone https://github.com/arsenbadalyan/movie-rent.git`
+2. Install dependencies: `npm install`
+3. Run the development server: `npm start`
+4. Open `http://localhost:3000` in your browser to access the survey.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Additional features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Customize the survey questions, logo, and branding to fit your specific needs.
+* Extend the project to include additional features, such as movie recommendations or rental platform comparisons.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributing
 
-## Learn More
+We welcome contributions to improve the project! Feel free to fork the repository, make changes, and submit pull requests.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contact
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+For any questions or feedback, please reach out to [your email address or other contact information].
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project is licensed under the [MIT License](LICENSE), allowing you to use and modify the code as needed.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Let's shed light on the world of movie rentals, one survey at a time! ✨**
